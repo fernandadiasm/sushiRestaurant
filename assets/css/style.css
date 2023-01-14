@@ -1,0 +1,190 @@
+/*=============== VARIABLES SCSS ===============*/
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== z index ==========*/
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(19deg, 100%, 96%);
+  color: hsl(19deg, 16%, 35%);
+  transition: background 0.4s; /* for dark mode animation */
+}
+
+h1, h2, h3 {
+  color: hsl(19deg, 16%, 15%);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== VARIABLES SCSS ===============*/
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== z index ==========*/
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  font-family: "Lora", serif;
+  margin-bottom: 1.5rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 1.25rem;
+  font-family: "Dancing Script", cursive;
+  color: hsl(19deg, 64%, 54%);
+  margin-bottom: 0.5rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== VARIABLES SCSS ===============*/
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== z index ==========*/
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: hsl(19deg, 100%, 96%);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: box-shadow 0.3s, background 0.4s;
+}
+.header .nav {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .nav__logo {
+  display: flex;
+  color: hsl(19deg, 16%, 15%);
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.header .nav .nav__logo img {
+  width: 25px;
+}
+.header .nav .nav__logo:hover {
+  color: hsl(19deg, 64%, 54%);
+}
+.header .nav .nav__close {
+  display: flex;
+  color: hsl(19deg, 16%, 15%);
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header .nav .nav__img-1 {
+  position: absolute;
+  opacity: 0.2;
+  width: 100px;
+  top: 0.75rem;
+  left: -2rem;
+  transform: rotate(165deg);
+}
+.header .nav .nav__img-2 {
+  position: absolute;
+  opacity: 0.2;
+  width: 50px;
+  right: -1rem;
+  bottom: 0rem;
+  transform: rotate(-30deg);
+}
+.header .nav .nav__toggle {
+  display: flex;
+  color: hsl(19deg, 16%, 15%);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.header .nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+}
+.header .nav .nav__list .nav__link {
+  color: hsl(19deg, 16%, 15%);
+  font-weight: 500;
+  transition: color 0.4s;
+}
+.header .nav .nav__list .nav__link:hover {
+  color: hsl(19deg, 64%, 54%);
+}
+
+/* Show menu */
+.show-menu {
+  top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: hsl(19deg, 100%, 96%);
+    width: 100%;
+    box-shadow: 0 8px 20px hsla(19deg, 64%, 24%, 0.1);
+    padding-block: 3.5rem;
+    transition: top 0.4s;
+  }
+}/*# sourceMappingURL=style.css.map */
