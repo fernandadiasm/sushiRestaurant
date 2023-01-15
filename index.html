@@ -22,62 +22,124 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets//styles/style.css">
 
     <!--=============== TITLE ===============-->
     <title>Sushi Restaurant </title>
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="./public/img/logo.png" alt="Logo image">
-                Sushi
-            </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="public/img/logo.png" alt="logo image">
+                    Sushi
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#recently" class="nav__link">Recently</a>
+                        </li>
+                    </ul>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About us</a>
-                    </li>
+                    <!-- Close Button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
 
-                    <li class="nav__item">
-                        <a href="#popular" class="nav__link">Popular</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#recently" class="nav__link">Recently</a>
-                    </li>
-                </ul>
-
-                <!-- close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                    <img src="./public/img/leaf-branch-4.png" alt="nav image" class="nav__img-1">
+                    <img src="./public/img/leaf-branch-3.png" alt="nav image" class="nav__img-2">
                 </div>
 
-                <img src="./public/img/leaf-branch-4.png" alt="nav image" class="nav__img-1">
-                <img src="./public/img/leaf-branch-3.png" alt="nav image" class="nav__img-2">
-            </div>
+                <div class="nav__buttons">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-            <div class="nav__buttons">
-                <!-- theme change button -->
-                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
 
-                <!-- toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-apps-2-line"></i>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <img src="public/img/home-sushi-rolls.png" alt="home image sushi" class="home__img">
 
-    <script src="./assets/js/main.js"></script>
-</body>
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Enjoy Delicious
+
+                            <div>
+                                <img src="public/img/home-sushi-title.png" alt="home image sushi">
+                                Sushi Food
+                            </div>
+                        </h1>
+
+                        <p class="home__description">
+                            Enjoy a good dinner with the best dishes in restaurant and improve your day.
+                        </p>
+
+                        <a href="#" class="button">
+                            Order Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="public/img/leaf-branch-2.png" alt="" class="home__leaf-1">
+                <img src="public/img/leaf-branch-4.png" alt="" class="home__leaf-2">
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+
+            </section>
+
+            <!--==================== RECENTLY ====================-->
+            <section class="recently section" id="recently">
+
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section">
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./assets/js/main.js"></script>
+    </body>
 
 </html>
