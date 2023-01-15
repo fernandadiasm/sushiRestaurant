@@ -1,0 +1,92 @@
+@import '../config/variables';
+
+//function
+@mixin home-img {
+    position: absolute;
+    opacity: 0.2;
+}
+
+/*=============== HOME ===============*/
+.home {
+    position: relative;
+
+    &__container {
+        row-gap: 3rem;
+        padding-top: 2rem;
+
+
+        .home__img {
+            width: 300px;
+            justify-self: center;
+        }
+    }
+
+    &__data {
+        text-align: center;
+
+        .home__title {
+            font-size: $biggest-font-size;
+            font-family: $title-font;
+            margin-bottom: 1rem;
+
+            img {
+                width: 40px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: .5rem;
+            }
+
+        }
+
+        .home__description {
+            padding: 0 1rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__leaf-1 {
+        @include home-img;
+        width: 80px;
+        top: 8rem;
+        left: -1rem;
+        transform: rotate(90deg);
+    }
+
+    &__leaf-2 {
+        @include home-img;
+        width: 100px;
+        right: -2rem;
+        bottom: -5rem;
+        transform: rotate(-15deg);
+    }
+}
+
+/*button*/
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: $first-color;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    color: #fff;
+    font-weight: $font-medium;
+    transition: background .3s;
+
+    i {
+        font-size: 1.5rem;
+        transition: transform .3s;
+    }
+
+    &:hover {
+        background-color: $first-color-alt;
+
+        i {
+            transform: translateX(.25rem);
+        }
+    }
+}
